@@ -24,7 +24,7 @@ router.use(bodyparser.text({ type: 'text/*' })) // Bu satır olmadan plain text 
 router.post('/raspberry', (req, res) => { //Burası Raspberry Pi'dan obje göndermek için
     res.send("OK, Received!" + "\nPlate: " + req.body.plate)
 }); 
-router.post('/raspberry', (req, res) => {  //Burası Raspberry Pi'dan düz yazı göndermek için
+router.post('/raspberry-plain', (req, res) => {  //Burası Raspberry Pi'dan düz yazı göndermek için
     res.send("OK, Received!" + "\nGelen veri:  " + req.body)
 }); 
 
